@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Image Gallery</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>📸Smart Image Gallery🖼️</h1>
+
+<div class="filters">
+  <button onclick="filterImages('all')">All</button>
+  <button onclick="filterImages('food')">Food</button>
+  <button onclick="filterImages('nature')">Nature</button>
+  <button onclick="filterImages('car')">Car</button>
+</div>
+
+<div class="gallery">
+
+  <!-- FOOD -->
+  <div class="image-box food">
+    <img src="images/img1.jpg">
+    <p>Fresh Fruits🍎</p>
+  </div>
+
+  <div class="image-box food">
+    <img src="images/img2.jpg">
+    <p>Junk Food🍔</p>
+  </div>
+
+  <!-- NATURE -->
+  <div class="image-box nature">
+    <img src="images/img3.jpg">
+    <p>Waterfall🌊</p>
+  </div>
+
+  <div class="image-box nature">
+    <img src="images/img4.jpg">
+    <p>Garden🌿</p>
+  </div>
+
+  <!-- CAR -->
+  <div class="image-box car">
+    <img src="images/img5.jpg">
+    <p>Benz🚗</p>
+  </div>
+
+  <div class="image-box car">
+    <img src="images/img6.jpg">
+    <p>Lamborghini🏎️</p>
+  </div>
+
+</div>
+
+<!-- Lightbox -->
+<div id="lightbox">
+  <span id="closeBtn">&times;</span>
+
+  <button id="prevBtn">⬅️</button>
+  <img id="lightboxImg">
+  <button id="nextBtn">➡️</button>
+
+  <p id="caption"></p>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
